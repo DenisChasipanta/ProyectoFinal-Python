@@ -1,0 +1,26 @@
+<!--Heredando del template padre-->
+{% extends "core/base.html" %} {% block title %}Home{% endblock %}
+<!--Imagen cabecera-->
+{% block background%} {% load static %} {% static 'core/img/portada_tienda.jpg'%}{%endblock%}
+<!--Titulo y descipcion-->
+{% block header%}
+<h1>Portada</h1>
+{%endblock%} 
+{% block content %}
+<section style="text-align: center;">
+    <h2>Explora Nuestra Colección</h2>
+    <p>Bienvenido a "CineMaster", tu destino para encontrar las mejores películas. Explora nuestra extensa colección y descubre joyas cinematográficas de todos los géneros.</p>
+    <img src="{% static 'core/img/portada_tienda.jpg'%}" alt="Portada de la Tienda">
+</section>
+
+<section style="text-align: center;">
+    <h2>Últimos Lanzamientos</h2>
+    <p>No te pierdas nuestros últimos lanzamientos. Desde éxitos de taquilla hasta joyas independientes, tenemos algo para todos los amantes del cine.</p>
+    <img src="{% static 'core/img/ultimos_lanzamientos.jpg'%}" alt="Últimos Lanzamientos">
+</section>
+
+<section style="text-align: center;">
+    <h2>Ofertas Especiales</h2>
+    <p>Descubre nuestras ofertas especiales y promociones. ¡Haz que tus noches de cine sean aún más emocionantes con descuentos exclusivos!</p>
+</section>
+{% endblock  %}

@@ -1,0 +1,25 @@
+<!--Heredando del template padre-->
+{% extends "core/base.html" %} {% block title %}ACERCA DE{% endblock %}
+<!--Imagen cabecera-->
+{% block background%} {% load static %} {% static 'core/img/ultimos_lanzamientos.jpg'%}{%endblock%}
+<!--Titulo y descipcion-->
+{% block header%}
+<h1>Historia</h1>
+{%endblock%} 
+{% block content %}
+<h1 style="text-align: center;">Bienvenido a "MOVIE-HOME"</h1>
+
+    <p>En el corazón del animado barrio creativo de la ciudad, nació "MOVIE-HOME". Esta tienda única abrió sus puertas con la visión de ofrecer productos únicos y creativos para aquellos que buscan algo más que lo convencional.</p>
+
+
+    <p>Desde el primer día, "MOVIE-HOME" se convirtió en un refugio para amantes del arte, la artesanía y la originalidad. La tienda está diseñada con colores vibrantes y estantes llenos de productos hechos a mano, desde obras de arte hasta artículos de decoración exclusivos.</p>
+
+
+    <p>El equipo de "MOVIE-HOME" está formado por artistas locales apasionados que curan cuidadosamente cada artículo en la tienda. Los clientes son recibidos por una atmósfera cálida y acogedora, donde pueden explorar y descubrir tesoros creativos.</p>
+
+    <p>La tienda también organiza eventos comunitarios, talleres de arte y colaboraciones con artistas locales. La misión de "Aventura Creativa" es fomentar la creatividad y celebrar la diversidad artística.</p>
+
+    <p>Con el tiempo, "MOVIE-HOME" ha ganado el corazón de la comunidad y se ha convertido en un lugar icónico para aquellos que buscan inspiración y regalos únicos. La tienda sigue evolucionando, trayendo constantemente nuevas ideas y productos para alimentar la llama de la creatividad.</p>
+
+    <p>¡Ven y únete a la aventura en "MOVIE-HOME"!</p>
+{% endblock  %}

@@ -1,0 +1,104 @@
+<!--Heredando del template padre-->
+{% extends "core/base.html" %} {% block title %}Tienda{% endblock %}
+<!--Imagen cabecera-->
+{% block background%} {% load static %} {% static 'core/img/ultimos_lanzamientos.jpg'%}{%endblock%}
+<!--Titulo y descipcion-->
+{% block header%} 
+<h1>Tienda</h1>
+{%endblock%} 
+{% block content %}
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h1 class="text-primary text-uppercase" style="letter-spacing: 5px;">Películas</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid" src="{% static 'core/img/pelicula1.jpg'%}" alt="">
+                    <div class="p-4">
+                        <a class="h5 text-decoration-none" href="">RIO</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                <h5 class="m-0">$10</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid" src="{% static 'core/img/pelicula2.jpg'%}" alt="">
+                    <div class="p-4">
+                        <a class="h5 text-decoration-none" href="">BATMAN CONTRA DRACULA</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                <h5 class="m-0">$10</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid" src="{% static 'core/img/pelicula3.webp'%}" alt="">
+                    <div class="p-4">
+                        <a class="h5 text-decoration-none" href="">Illumination Presents: Dr. Seuss' The Grinch</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                <h5 class="m-0">$10</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid" src="{% static 'core/img/pelicula4.webp'%}" alt="">
+                    <div class="p-4">
+                        <a class="h5 text-decoration-none" href="">Jurassic World Dominion</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                <h5 class="m-0">$10</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid" src="{% static 'core/img/pelicula5.webp'%}" alt="">
+                    <div class="p-4">
+                        <a class="h5 text-decoration-none" href="">Guy Ritchie's The Covenant</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                <h5 class="m-0">$10</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-item bg-white mb-2">
+                    <img class="img-fluid" src="{% static 'core/img/pelicula6.jpg'%}" alt="">
+                    <div class="p-4">
+                        <a class="h5 text-decoration-none" href="">John Wick: Chapter 4</a>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                <h5 class="m-0">$10</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock  %}

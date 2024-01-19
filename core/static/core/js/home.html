@@ -1,0 +1,10 @@
+<!--Heredando del template padre-->
+{% extends "core/base.html" %} {% block title %}Home{% endblock %}
+<!--Imagen cabecera-->
+{% block background%} {% load static %} {% static 'core/img/home-bg.jpg'%}{%endblock%}
+<!--Titulo y descipcion-->
+{% block header%}
+{% load static %} {% static 'core/img/home-bg.jpg'%}
+<h1>Denis Chasipanta</h1>
+<span class="subheading">Ingeniero en Sistemas</span>
+{%endblock%} 

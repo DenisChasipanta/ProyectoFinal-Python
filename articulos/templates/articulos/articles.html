@@ -1,0 +1,22 @@
+<!--Heredando del template padre-->
+{% extends "core/base.html" %} {% block title %}Articulos{% endblock %}
+<!--Imagen cabecera-->
+{% block background%} {% load static %} {% static 'core/img/ultimos_lanzamientos.jpg'%}{%endblock%}
+<!--Titulo y descipcion-->
+{% block header%}
+<h1>Articulos</h1>
+{%endblock%} 
+{% block content %} 
+{% for articulo in articles%}
+<div class="row project">
+  <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid" src="{{articulo.image.url}}" alt="" />
+  </div>
+  <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading title">{{articulo.title}}</h2>
+    <p>{{articulo.subtitle}}</p>
+    <p>{{articulo.content}}</p>
+    <p><a href="{{articulo.image.url}}">Más información</a></p>
+  </div>
+</div>
+{% endfor %} {% endblock %}
